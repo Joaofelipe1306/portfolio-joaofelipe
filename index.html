@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Felipe | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="menu container">
+      <h1 class="logo">João Felipe</h1>
+      <button id="menuBtn" aria-label="Abrir menu">☰</button>
+      <ul id="menuLista">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#portifolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="inicio">
+    <div class="container inicio-conteudo">
+      <div>
+        <p class="texto-topo">PORTFÓLIO PESSOAL</p>
+        <h2>Olá, eu sou<br><span>João Felipe</span></h2>
+        <p class="descricao">
+          Eu tenho 19 anos e sou um Estudante de Ciência
+          da Computação da Uninter.
+        </p>
+        <button id="temaBtn" class="botao">Trocar Tema</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mim" class="secao">
+    <div class="container">
+      <h2 class="titulo">Sobre Mim</h2>
+      <div class="card-perfil">
+        <h3>💻 Sobre Mim</h3>
+        <p>Olá! Meu nome é João Felipe, tenho 19 anos e sou estudante de Ciência da Computação na UNINTER. Moro em Minas Gerais, Brasil, e estou apaixonado por tecnologia e programação.</p>
+        <p>📚 Atualmente estou no 3º período do curso, onde aprendo sobre algoritmos, estruturas de dados e desenvolvimento de software. Também estou cursando Gestão Pública em paralelo, o que me ajuda a entender melhor a aplicação prática da tecnologia em setores públicos.</p>
+        <p>🌎 Sempre fui fascinado por como a tecnologia pode transformar vidas. Cresci em uma cidade pequena, onde vi a importância da inovação para conectar comunidades e resolver problemas locais.</p>
+        <p>🚀 Estou focando meus estudos em Front-End e Back-End, aprendendo linguagens como HTML, CSS, JavaScript e Python. Já desenvolvi alguns projetos pessoais, como este portfólio e um buscador de código de barras para minha cidade.</p>
+        <p>💼 Atualmente faço estágio na prefeitura da minha cidade, no setor de contabilidade, onde utilizo programação para criar automações básicas que facilitam o dia a dia, otimizando processos e reduzindo erros manuais.</p>
+        <p>🎯 Meu objetivo é me tornar um desenvolvedor full-stack, capaz de criar aplicações web completas e impactantes. Gosto de desafios e estou sempre buscando aprender algo novo todos os dias.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="formacao" class="secao">
+    <div class="container">
+      <h2 class="titulo">Formações</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🎓 Ciência da Computação</h3>
+          <p>Atualmente cursando na UNINTER.</p>
+          <p>3º período</p>
+          <p>Previsão de conclusão: 2028</p>
+        </div>
+        <div class="card">
+          <h3>🎓 Gestão Pública</h3>
+          <p>Atualmente cursando em outra universidade.</p>
+          <p>3º período</p>
+          <p>Previsão de conclusão: 2027</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologias" class="secao fundo">
+    <div class="container">
+      <h2 class="titulo">Tecnologias</h2>
+      <div class="card">
+        <h3>🛠 Tecnologias que domino</h3>
+        <div class="tecnologias">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>GitHub</span><span>VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portifolio" class="secao fundo">
+    <div class="container">
+      <h2 class="titulo">Meu Portfólio</h2>
+      <div class="cards projetos">
+        <div class="card projeto-card">
+          <h3>📱 Buscador de Código de Barras</h3>
+          <p>Aplicativo para buscar produtos por código de barras nos boletos da prefeitura da minha cidade com python.</p>
+        </div>
+        <div class="card projeto-card">
+          <h3>📱 Site para a loja de salgados</h3>
+          <p>Site para a loja de salgados da minha tia com HTML, CSS e JavaScript.</p>
+        </div>
+        <div class="card projeto-card">
+          <h3>🤖 Automações para Contabilidade</h3>
+          <p>Scripts em Python para automatizar processos no setor de contabilidade da prefeitura, facilitando tarefas diárias e reduzindo erros manuais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao">
+    <div class="container">
+      <h2 class="titulo">Contato</h2>
+      <div class="cards contato-card">
+        <div class="card">
+          <h3>Fale comigo</h3>
+          <p>Envie uma mensagem para saber mais sobre meus projetos.</p>
+          <p>📧 joaofelipegoncalves1306@gmail.com</p>
+        </div>
+        <div class="card">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" placeholder="Seu nome">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seu@email.com">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+          <button id="enviarBtn" class="botao" type="button">Enviar mensagem</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
