@@ -1,4 +1,4 @@
-// MENU MOBILE
+
 const menuBtn = document.getElementById('menuBtn');
 const menuLista = document.getElementById('menuLista');
 
@@ -7,7 +7,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-// TROCAR TEMA
+
 const temaBtn = document.getElementById('temaBtn');
 
 temaBtn.addEventListener('click', () => {
@@ -15,7 +15,7 @@ temaBtn.addEventListener('click', () => {
 });
 
 
-// FORMULÁRIO
+
 const enviarBtn = document.getElementById('enviarBtn');
 
 const nome = document.getElementById('nome');
@@ -39,7 +39,7 @@ enviarBtn.addEventListener('click', () => {
     return;
   }
 
-  // Enviar email usando EmailJS
+
   emailjs.init('9VyKcL7aVPGubADSM'); // Sua chave pública do EmailJS
 
   const templateParams = {
